@@ -21,7 +21,7 @@ export default function ToDoForm({ addTodo }) {
           value={values}
         ></input>
         <button type="submit" className="SubmitButton">
-          Agregar
+          Agregar Tarea
         </button>
       </form>
     </div>

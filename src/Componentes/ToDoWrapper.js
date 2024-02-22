@@ -12,11 +12,25 @@ export default function ToDoWrapper() {
       { id: uuidv4(), task: todo, completed: false, isEditing: false },
     ]);
   };
+  const toogleComplete = (id) => {
+    SetTodos(
+      todos.map((todo) =>
+        todo.id === id
+          ? {
+              ...todo,
+              completed: !todo.completed,
+            }
+          : todo
+      )
+    );
+  };
   return (
     <div>
       <ToDoForm addTodo={addTodo}></ToDoForm>
       {todos.map((todo, i) => {
-        return <ToDo task={todo} key={i}></ToDo>;
+        return (
+          <ToDo task={todo} key={i} toogleComplete={toogleComplete}></ToDo>
+        );
       })}
     </div>
   );
