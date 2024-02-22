@@ -27,6 +27,13 @@
 .App-link {
   color: #61dafb;
 }
+/* Estilo para el título de la lista de tareas */
+.ListTitle {
+  font-size: 40px; /* Tamaño de fuente */
+  font-weight: bold; /* Negrita */
+  color: lightskyblue; /* Color del texto */
+  margin-bottom: 5px; /* Margen inferior */
+}
 
 /* Estilos para el botón */
 .SubmitButton {
@@ -68,4 +75,23 @@
 
 .ToDoForm h2 {
   text-align: center; /* Alineación del texto */
+}
+
+.Todo {
+  background-color: #f2f2f2; /* Color de fondo */
+  border-radius: 8px; /* Radio de borde */
+  padding: 10px; /* Espaciado interno */
+  margin-bottom: 10px; /* Margen inferior */
+}
+
+.Todo p {
+  margin: 0; /* Eliminar margen en el párrafo */
+}
+
+.Todo div {
+  margin-top: 5px; /* Margen superior */
+}
+
+.Todo div > * {
+  margin-right: 5px; /* Margen derecho para los iconos */
 }
